@@ -8,6 +8,7 @@ public class simpleMove : MonoBehaviour
 {
     public float speed = 3.0F;
     public float rotateSpeed = 3.0F;
+    public bool inNPCRange = false;
 
     void Update()
     {
@@ -25,5 +26,27 @@ public class simpleMove : MonoBehaviour
         }
 
         controller.SimpleMove(forward * curSpeed);
+
+        if(inNPCRange && Input.GetKey("x"))
+        {
+            Debug.Log("HI!");
+        }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "NPC")
+        {
+            inNPCRange = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.tag == "NPC")
+        {
+            inNPCRange = false;
+        }
+    }
+
 }
