@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -985,6 +985,7 @@ GameObject:
   - component: {fileID: 827263900}
   - component: {fileID: 827263899}
   - component: {fileID: 827263898}
+  - component: {fileID: 827263904}
   m_Layer: 0
   m_Name: alligator
   m_TagString: NPC
@@ -1099,6 +1100,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827263904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827263897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e861b7dc81bcc745a10d9abdecee13d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inPlayerRange: 0
+  level: 0
 --- !u!1 &847436377
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1658,7 @@ GameObject:
   - component: {fileID: 1323979115}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
