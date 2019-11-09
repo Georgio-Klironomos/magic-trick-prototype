@@ -82,6 +82,7 @@ public class NPCInteraction : MonoBehaviour
         if (other.tag == "Player")
         {
             inPlayerRange = false;
+            text.text = "";
         }
     }
 }
