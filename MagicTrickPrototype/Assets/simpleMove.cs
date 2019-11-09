@@ -1,21 +1,33 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
 
 public class simpleMove : MonoBehaviour
 {
+    CharacterController controller;
+    public GameObject skateboard;
+    kickFlip kickflip;
+
     public float speed = 3.0F;
     public float rotateSpeed = 3.0F;
+    public float jumpSpeed = 8.0f;
+    public float gravity = 20.0f;
     public bool inNPCRange = false;
+
+    private Vector3 moveDirection = Vector3.zero;
+
+    void Start()
+    {
+         controller = GetComponent<CharacterController>();
+        kickflip = skateboard.GetComponent<kickFlip>();
+    }
 
     void Update()
     {
-        CharacterController controller = GetComponent<CharacterController>();
+
 
         // Rotate around y - axis
-        transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
+        /*transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
 
         // Move forward / backward
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -24,10 +36,55 @@ public class simpleMove : MonoBehaviour
         { 
             curSpeed *= 3;
         }
+        forward *= curSpeed;
+        
 
-        controller.SimpleMove(forward * curSpeed);
+        controller.SimpleMove(forward); //* Time.deltaTime);
+        */
+       
+        if (controller.isGrounded)
+        {
+            // We are grounded, so recalculate
+            // move direction directly from axes
 
-        if(inNPCRange && Input.GetKey("x"))
+
+            transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed, 0);
+            moveDirection = transform.TransformDirection(Vector3.forward);
+            //moveDirection *= speed * Input.GetAxis("Vertical");
+
+            if (Input.GetKey("space"))
+            {
+                moveDirection *= speed * Input.GetAxis("Vertical") * 3.0F;
+            }
+            else
+            {
+                moveDirection *= speed * Input.GetAxis("Vertical");
+            }
+            
+            if (Input.GetKeyUp("space"))
+            {
+                moveDirection.y = jumpSpeed;
+            }
+        }
+        else
+        {
+            transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed * 2, 0);
+            if (Input.GetKeyDown("e") && kickflip.active != true)
+            {
+               kickflip.active = true;
+            }
+        }
+
+        // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
+        // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
+        // as an acceleration (ms^-2)
+        moveDirection.y -= gravity * Time.deltaTime;
+
+        // Move the controller
+        controller.Move(moveDirection * Time.deltaTime);
+
+
+        if (inNPCRange && Input.GetKey("x"))
         {
             Debug.Log("HI!");
         }
@@ -48,5 +105,14 @@ public class simpleMove : MonoBehaviour
             inNPCRange = false;
         }
     }
+   /* private void kickflip()
+    {
+        Debug.Log("kickflip");
+        for (var fliploop = 0; fliploop < 3600000; fliploop++)
+        {
+            skateboard.transform.Rotate(Vector3.up / 10000);
+        }
+
+    }*/
 
 }
