@@ -7,6 +7,7 @@ public class simpleMove : MonoBehaviour
     CharacterController controller;
     public GameObject skateboard;
     private Animation kickflip;
+    private Animation backflip;
     ParticleSystem magic;
 
     public float speed = 3.0F;
@@ -21,6 +22,7 @@ public class simpleMove : MonoBehaviour
     {
          controller = GetComponent<CharacterController>();
         kickflip = skateboard.GetComponent<Animation>();
+        backflip = GetComponent<Animation>();
         magic = GetComponent<ParticleSystem>();
 
     }
@@ -75,6 +77,11 @@ public class simpleMove : MonoBehaviour
             if (Input.GetKeyDown("e") && kickflip.isPlaying != true)
             {
                 kickflip.Play("kickFlip");
+                magic.Play();
+            }
+            if (Input.GetKeyDown("r") && kickflip.isPlaying != true)
+            {
+                backflip.Play("backflip");
                 magic.Play();
             }
         }
