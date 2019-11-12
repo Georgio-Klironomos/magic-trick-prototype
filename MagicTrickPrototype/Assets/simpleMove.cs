@@ -6,7 +6,8 @@ public class simpleMove : MonoBehaviour
 {
     CharacterController controller;
     public GameObject skateboard;
-    kickFlip kickflip;
+    private Animation kickflip;
+    ParticleSystem magic;
 
     public float speed = 3.0F;
     public float rotateSpeed = 3.0F;
@@ -19,7 +20,9 @@ public class simpleMove : MonoBehaviour
     void Start()
     {
          controller = GetComponent<CharacterController>();
-        kickflip = skateboard.GetComponent<kickFlip>();
+        kickflip = skateboard.GetComponent<Animation>();
+        magic = GetComponent<ParticleSystem>();
+
     }
 
     void Update()
@@ -69,9 +72,10 @@ public class simpleMove : MonoBehaviour
         else
         {
             transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed * 2, 0);
-            if (Input.GetKeyDown("e") && kickflip.active != true)
+            if (Input.GetKeyDown("e") && kickflip.isPlaying != true)
             {
-               kickflip.active = true;
+                kickflip.Play("kickflipper");
+                magic.Play();
             }
         }
 

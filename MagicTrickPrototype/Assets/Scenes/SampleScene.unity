@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1755,8 +1755,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71297f18b85a8f444a5010b8c709d548, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skateboard: {fileID: 2110573006}
   speed: 3
   rotateSpeed: 3
+  jumpSpeed: 8
+  gravity: 20
   inNPCRange: 0
 --- !u!1 &1627976799
 GameObject:
@@ -1850,3 +1853,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1627976799}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2110573006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 67de2da5571a9d74cb5af587c8030ebd,
+    type: 3}
+  m_PrefabInstance: {fileID: 668427350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2110573007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110573006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53b5bb1fc228034438f8871bc8b924d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationDirection: {x: 0, y: 1, z: 0}
+  smoothTime: 1
+  active: 0
