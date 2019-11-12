@@ -74,7 +74,7 @@ public class simpleMove : MonoBehaviour
             transform.Rotate(0, Input.GetAxis("Horizontal") * rotateSpeed * 2, 0);
             if (Input.GetKeyDown("e") && kickflip.isPlaying != true)
             {
-                kickflip.Play("kickflipper");
+                kickflip.Play("kickFlip");
                 magic.Play();
             }
         }
