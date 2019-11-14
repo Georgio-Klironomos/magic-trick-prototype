@@ -120,6 +120,28 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &426784024 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 153722, guid: c4ae6fc83f0d4f64091afc0dccd76dd6,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935840388}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &426784030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426784024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbe2ea1125a534c4d82345cea0605334, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AutoPlay: 0
+  StartPassage: Intro
+  AdditionalCues: []
+  DebugMode: 0
 --- !u!1001 &1935840388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -391,6 +413,7 @@ GameObject:
   - component: {fileID: 2132074501}
   - component: {fileID: 2132074500}
   - component: {fileID: 2132074499}
+  - component: {fileID: 2132074503}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -463,3 +486,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132074503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132074498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 230c83ddecabca94fa9c89b000823c58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: SampleScene
+  loadToColor: {r: 1, g: 1, b: 1, a: 1}
