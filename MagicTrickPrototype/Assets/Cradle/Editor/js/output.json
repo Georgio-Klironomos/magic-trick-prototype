@@ -1,0 +1,1277 @@
+{
+    "console": [],
+    "result": {
+        "passages": [
+            {
+                "Name": "Intro",
+                "Pid": "1",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "You walk past an unfamiliar store, is it new? You've lived here your whole life and not once seen this place. A giant neon sign illuminates the street, it reads \"Wiz-Kid Skate\". It seems to be a skate shop, a magic shop, some wierd hybrid? The store beckons you, almost as if you feel the store itself call your name. Going against your better judgment you decide to go in, I mean at least it looks cool? ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Enter Store\",\"Enter Store\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Enter Store\",\"Enter Store\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Enter Store",
+                                "text": "\"Enter Store\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Enter Store",
+                                "text": "\"Enter Store\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Enter Store",
+                "Pid": "2",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "A little bell rings as you pass through the door and you begin to take in the store's atmosphere. The deep purple walls are littered with skateboard racks and banners with illegible sigils. The store is full of clothing racks of skate apparel and cloaks and display cases with skateboard parts and crystals. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "You notice a weird looking man wearing a cheap wizard costume standing behind the counter. He greats you with a wave",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Talk to Clerk\",\"Talk to Clerk\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Talk to Clerk\",\"Talk to Clerk\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Talk to Clerk",
+                "Pid": "3",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Greetings mortal and welcome to Wiz-Kid skate emporium where the line between the mysicial and the radical merges. Can I interest you in our wares?",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"What is this place?\",\"What is this place?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"What is this place?\",\"What is this place?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "What is this place?",
+                                "text": "\"What is this place?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "What is this place?",
+                                "text": "\"What is this place?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"When did you open?\",\"When did you open?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"When did you open?\",\"When did you open?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "When did you open?",
+                                "text": "\"When did you open?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "When did you open?",
+                                "text": "\"When did you open?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Magic?\",\"Magic?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Magic?\",\"Magic?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Magic?",
+                                "text": "\"Magic?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Magic?",
+                                "text": "\"Magic?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Well got anything cool?\",\"Well got anything cool?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Well got anything cool?\",\"Well got anything cool?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Well got anything cool?",
+                                "text": "\"Well got anything cool?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Well got anything cool?",
+                                "text": "\"Well got anything cool?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "What is this place?",
+                "Pid": "4",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "set: $questions = $questions + 1",
+                        "name": "set",
+                        "text": "(set: $questions = $questions + 1)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "=",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "+",
+                                "type": "addition"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "1",
+                                "type": "number",
+                                "value": 1
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Wizard: Did you not hear my greeting, I said \"Greetings mortal and welcome to Wiz-Kid skate emporium where the line between the mysicial and the radical merges. Can I interest you in our wares?\" ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Talk to Clerk\",\"Talk to Clerk\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Talk to Clerk\",\"Talk to Clerk\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": " ",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "When did you open?",
+                "Pid": "5",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "set: $questions = $questions + 1",
+                        "name": "set",
+                        "text": "(set: $questions = $questions + 1)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "=",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "+",
+                                "type": "addition"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "1",
+                                "type": "number",
+                                "value": 1
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Wizard: We've been here for a long long time, we've been here before this towns founding. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Then why have I never seen this store?\",\"Then why have I never seen this store?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Then why have I never seen this store?\",\"Then why have I never seen this store?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Then why have I never seen this store?",
+                                "text": "\"Then why have I never seen this store?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Then why have I never seen this store?",
+                                "text": "\"Then why have I never seen this store?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": " ",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Magic?",
+                "Pid": "6",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "innerText": "set: $questions = $questions + 1",
+                        "name": "set",
+                        "text": "(set: $questions = $questions + 1)",
+                        "tokens": [
+                            {
+                                "text": "set:",
+                                "type": "macroName"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "=",
+                                "type": "to"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "name": "questions",
+                                "text": "$questions",
+                                "type": "variable"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "+",
+                                "type": "addition"
+                            },
+                            {
+                                "text": " ",
+                                "type": "whitespace"
+                            },
+                            {
+                                "text": "1",
+                                "type": "number",
+                                "value": 1
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Wizard: Yes, Magic.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Just as the Wizard finishes his sentence he brings out a cheap wand and with a flick fake flowes spring out. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Talk to Clerk\",\"Talk to Clerk\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Talk to Clerk\",\"Talk to Clerk\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": " ",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Then why have I never seen this store?",
+                "Pid": "7",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: That just means you haven't been looking.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": ".",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": ".",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": ".",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Wizard: Also really? You missed the bright neon sign outside?",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Talk to Clerk\",\"Talk to Clerk\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Talk to Clerk\",\"Talk to Clerk\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Talk to Clerk",
+                                "text": "\"Talk to Clerk\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    },
+                    {
+                        "text": " ",
+                        "type": "text"
+                    }
+                ]
+            },
+            {
+                "Name": "Well got anything cool?",
+                "Pid": "8",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Why yes we have many \"cool\" things but you're going to have to be specific. We have crystals embeded with the souls of demons, cloaks made out of unicorn hair, hoodies for 15% off. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Got anything that can help me make friends?\",\"Got anything that can help me make friends?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Got anything that can help me make friends?\",\"Got anything that can help me make friends?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Got anything that can help me make friends?",
+                                "text": "\"Got anything that can help me make friends?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Got anything that can help me make friends?",
+                                "text": "\"Got anything that can help me make friends?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Got anything that can help me make friends?",
+                "Pid": "9",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: If friendship is what you seek that kind of powerful magic is out of your reach. Friendship magic is very dangerous and not something to be toyed with. However, I do have this.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The Wizard pulls out a skateboard with a bright teal lighting bolt and crystal wheels.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Wizard: With this bad boi you'll make friends in no time. Will you accept the responsability of the board?",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Wow can I try it out?\",\"Wow can I try it out?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Wow can I try it out?\",\"Wow can I try it out?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Wow can I try it out?",
+                                "text": "\"Wow can I try it out?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Wow can I try it out?",
+                                "text": "\"Wow can I try it out?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Wow can I try it out?",
+                "Pid": "10",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Uh not so fast, you can't just try out the skateboards. You have to buy it before you can ride it you fool.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Fine how much is it?\",\"Fine how much is it?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Fine how much is it?\",\"Fine how much is it?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Fine how much is it?",
+                                "text": "\"Fine how much is it?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Fine how much is it?",
+                                "text": "\"Fine how much is it?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Fine how much is it?",
+                "Pid": "11",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: The price can be negotiated later, what I'm asking is do you want the skateboard, yes or no?",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"What do you mean the price can be negotiated later?\",\"What do you mean the price can be negotiated later?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"What do you mean the price can be negotiated later?\",\"What do you mean the price can be negotiated later?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "What do you mean the price can be negotiated later?",
+                                "text": "\"What do you mean the price can be negotiated later?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "What do you mean the price can be negotiated later?",
+                                "text": "\"What do you mean the price can be negotiated later?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "What do you mean the price can be negotiated later?",
+                "Pid": "12",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Thats not important right now, whats important is that you use this board to make friends so you don't dissapoint your dear friend turtle when no one shows up to your party.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Wait how did you know that?!\",\"Wait how did you know that?!\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Wait how did you know that?!\",\"Wait how did you know that?!\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Wait how did you know that?!",
+                                "text": "\"Wait how did you know that?!\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Wait how did you know that?!",
+                                "text": "\"Wait how did you know that?!\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Wait how did you know that?!",
+                "Pid": "13",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: I'm a wizard, and all powerful and knowing being, and I know you want this skateboard. Now I'll ask again will you accept the responsability of this board? ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Yes...\",\"Yes...\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Yes...\",\"Yes...\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Yes...",
+                                "text": "\"Yes...\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Yes...",
+                                "text": "\"Yes...\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Yes...",
+                "Pid": "14",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Cool welp here you go",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "The wizard hands you the board and you feel an exhilirating power surge through your body, as if you have been struck by the teal lighting depicted on the board. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Hop on the board\",\"Hop on the board\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Hop on the board\",\"Hop on the board\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Hop on the board",
+                                "text": "\"Hop on the board\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Hop on the board",
+                                "text": "\"Hop on the board\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Hop on the board",
+                "Pid": "15",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Right as you hop on the board the lights in the store begin to flicker on and off rapidly and you see flashes of lightning outside. The lights begin acting norally and what ever storm was outside has subdued. You begin to skate back and forth. It seems like a normal skateboard. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"So now what?\",\"So now what?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"So now what?\",\"So now what?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "So now what?",
+                                "text": "\"So now what?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "So now what?",
+                                "text": "\"So now what?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "So now what?",
+                "Pid": "16",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Now you cast magic through the skateboard, but it will cost you.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"What do you mean?\",\"What do you mean?\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"What do you mean?\",\"What do you mean?\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "What do you mean?",
+                                "text": "\"What do you mean?\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "What do you mean?",
+                                "text": "\"What do you mean?\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "What do you mean?",
+                "Pid": "17",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Try stepping off the board.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Attempt to get of the skateboard\",\"Attempt to get of the skateboard\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Attempt to get of the skateboard\",\"Attempt to get of the skateboard\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Attempt to get of the skateboard",
+                                "text": "\"Attempt to get of the skateboard\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Attempt to get of the skateboard",
+                                "text": "\"Attempt to get of the skateboard\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Attempt to get of the skateboard",
+                "Pid": "18",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "As you attempt to hop off you feel as though your feet have fused to the skateboard. You try and hop only to perform an ollie. ",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"Hey what the heck?!\",\"Hey what the heck?!\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"Hey what the heck?!\",\"Hey what the heck?!\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "Hey what the heck?!",
+                                "text": "\"Hey what the heck?!\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "Hey what the heck?!",
+                                "text": "\"Hey what the heck?!\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "Hey what the heck?!",
+                "Pid": "19",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: I did say there would be a price, you've been cursed to ride the skateboard until the day you die. You didn't think magic came for free.",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "innerText": "link-goto:\"You never told me that part!\",\"You never told me that part!\"",
+                        "name": "linkgoto",
+                        "text": "(link-goto:\"You never told me that part!\",\"You never told me that part!\")",
+                        "tokens": [
+                            {
+                                "text": "link-goto:",
+                                "type": "macroName"
+                            },
+                            {
+                                "innerText": "You never told me that part!",
+                                "text": "\"You never told me that part!\"",
+                                "type": "string"
+                            },
+                            {
+                                "text": ",",
+                                "type": "comma"
+                            },
+                            {
+                                "innerText": "You never told me that part!",
+                                "text": "\"You never told me that part!\"",
+                                "type": "string"
+                            }
+                        ],
+                        "type": "macro"
+                    }
+                ]
+            },
+            {
+                "Name": "You never told me that part!",
+                "Pid": "20",
+                "Tags": "",
+                "Tokens": [
+                    {
+                        "text": "Wizard: Sucks kid, have a good life HAHAHAHA!",
+                        "type": "text"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "\n",
+                        "type": "br"
+                    },
+                    {
+                        "text": "Suddenly the Wizard drops a smokebomb and leaves the store. You notice he skateboards rather instead of running. And just like that you're alone in the store, unable to get off the board and unsure of how to do any of this \"magic\" you were promised. You go to the only logical location next, the skate park to see if anyone can help you learn some sick tricks. ",
+                        "type": "text"
+                    }
+                ]
+            }
+        ],
+        "startPid": "1"
+    }
+}
