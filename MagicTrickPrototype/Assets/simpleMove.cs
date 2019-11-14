@@ -8,7 +8,9 @@ public class simpleMove : MonoBehaviour
     public GameObject skateboard;
     private Animation kickflip;
     private Animation backflip;
-    ParticleSystem magic;
+    ParticleSystem magicParticles;
+    AudioSource skateSound;
+    AudioSource magicSFX;
 
     public float speed = 3.0F;
     public float rotateSpeed = 3.0F;
@@ -23,7 +25,9 @@ public class simpleMove : MonoBehaviour
          controller = GetComponent<CharacterController>();
         kickflip = skateboard.GetComponent<Animation>();
         backflip = GetComponent<Animation>();
-        magic = GetComponent<ParticleSystem>();
+        magicParticles = GetComponent<ParticleSystem>();
+        magicSFX = GetComponent<AudioSource>();
+        skateSound = skateboard.GetComponent<AudioSource>();
 
     }
 
@@ -60,10 +64,28 @@ public class simpleMove : MonoBehaviour
             if (Input.GetKey("space"))
             {
                 moveDirection *= speed * Input.GetAxis("Vertical") * 3.0F;
+                if(skateSound.isPlaying)
+                {
+                    skateSound.volume = 0.7f;
+                }
             }
             else
             {
                 moveDirection *= speed * Input.GetAxis("Vertical");
+                if (skateSound.isPlaying)
+                {
+                    skateSound.volume = 0.4f;
+                }
+            }
+
+            if(Input.GetAxis("Vertical") != 0 && !skateSound.isPlaying)
+            {
+                skateSound.Play();
+            }
+            else if(Input.GetAxis("Vertical") == 0 && skateSound.isPlaying)
+            {
+                skateSound.Stop();
+
             }
             
             if (Input.GetKeyUp("space"))
@@ -77,12 +99,25 @@ public class simpleMove : MonoBehaviour
             if (Input.GetKeyDown("e") && kickflip.isPlaying != true)
             {
                 kickflip.Play("kickFlip");
-                magic.Play();
+                magicParticles.Play();
+                //if (!magicSFX.isPlaying)
+               // {
+                    magicSFX.Play();
+               // }
             }
             if (Input.GetKeyDown("r") && kickflip.isPlaying != true)
             {
                 backflip.Play("backflip");
-                magic.Play();
+                magicParticles.Play();
+               // if (!magicSFX.isPlaying)
+               // {
+                    magicSFX.Play();
+                //}
+            }
+            if (skateSound.isPlaying)
+            {
+                skateSound.Stop();
+
             }
         }
 
