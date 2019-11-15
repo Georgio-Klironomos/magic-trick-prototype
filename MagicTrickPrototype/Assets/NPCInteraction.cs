@@ -10,6 +10,9 @@ public class NPCInteraction : MonoBehaviour
     public int level;
     private int MAX_OPTIONS;
     public Text text;
+    public RawImage NPCBox;
+    public Text playerText;
+    public RawImage playerBox;
     private KeyCode[] codes = {
             KeyCode.Alpha1,
             KeyCode.Alpha2,
@@ -21,15 +24,15 @@ public class NPCInteraction : MonoBehaviour
     {
         level = 0;
         interactions = new List<string>();
-        interactions.Add("hi2");
-        interactions.Add("hello3");
-        interactions.Add("heck off4");
-        interactions.Add("nice to meet you0");
-        interactions.Add("wow rude2");
-        interactions.Add("sorry7");
-        interactions.Add("I'm just a rude dude8");
-        interactions.Add("apology not accepted0");
-        interactions.Add("ök boomer0");
+        interactions.Add("hi2");                     //0
+        interactions.Add("hello3");                  //1
+        interactions.Add("heck off4");               //2
+        interactions.Add("nice to meet you0");       //3
+        interactions.Add("wow rude2");               //4
+        interactions.Add("sorry7");                  //5
+        interactions.Add("I'm just a rude dude8");   //6
+        interactions.Add("apology not accepted0");   //7
+        interactions.Add("ök boomer0");              //8
         MAX_OPTIONS = 3;
     }
 
@@ -41,9 +44,10 @@ public class NPCInteraction : MonoBehaviour
         {
             numOptions = int.Parse(interactions[level].Substring(interactions[level].Length - 1));
             text.text = interactions[level].Substring(0, interactions[level].Length - 1);
+            playerText.text = "";
             for(int i = 1; i <= numOptions; i++)
             {
-                text.text += "\n" + i + ". " + interactions[level + i].Substring(0, interactions[level + i].Length - 1);
+                playerText.text += i + ". " + interactions[level + i].Substring(0, interactions[level + i].Length - 1) + "\n";
             }
 
             if (numOptions == 0)
@@ -57,15 +61,22 @@ public class NPCInteraction : MonoBehaviour
                     level = int.Parse(interactions[level + j + 1].Substring(interactions[level + j + 1].Length - 1));
                 }
             }
-
-            /*if(Input.GetKeyDown(KeyCode.Alpha1) && numOptions >= 1)
-            {
-                level = int.Parse(interactions[level + 1].Substring(interactions[level + 1].Length - 1, interactions[level + 1].Length));
-            }
-            if (Input.GetKeyDown(KeyCode.Alpha2) && numOptions >= 2)
-            {
-                level = int.Parse(interactions[level + 2].Substring(interactions[level + 2].Length - 1, interactions[level + 2].Length));
-            }*/
+        }
+        if(text.text == "")
+        {
+            NPCBox.enabled = false;
+        }
+        else
+        {
+            NPCBox.enabled = true;
+        }
+        if (playerText.text == "")
+        {
+            playerBox.enabled = false;
+        }
+        else
+        {
+            playerBox.enabled = true;
         }
     }
 
@@ -83,6 +94,7 @@ public class NPCInteraction : MonoBehaviour
         {
             inPlayerRange = false;
             text.text = "";
+            playerText.text = "";
         }
     }
 }
