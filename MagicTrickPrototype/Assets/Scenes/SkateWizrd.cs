@@ -74,13 +74,13 @@ public partial class @SkateWizrd: Cradle.StoryFormats.Harlowe.HarloweStory
 		passage20_Init();
 	}
 
-    // ---------------
-    #endregion
+	// ---------------
+	#endregion
 
-    // .............
-    // #1: Intro
+	// .............
+	// #1: Intro
 
-    void passage1_Init()
+	void passage1_Init()
 	{
 		this.Passages[@"Intro"] = new StoryPassage(@"Intro", new string[]{  }, passage1_Main);
 	}
@@ -468,7 +468,7 @@ public partial class @SkateWizrd: Cradle.StoryFormats.Harlowe.HarloweStory
 	void passage20_Init()
 	{
 		this.Passages[@"You never told me that part!"] = new StoryPassage(@"You never told me that part!", new string[]{  }, passage20_Main);
-    }
+	}
 
 	IStoryThread passage20_Main()
 	{
@@ -476,10 +476,8 @@ public partial class @SkateWizrd: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return lineBreak();
 		yield return lineBreak();
 		yield return text("Suddenly the Wizard drops a smokebomb and leaves the store. You notice he skateboards rather instead of running. And just like that you're alone in the store, unable to get off the board and unsure of how to do any of this \"magic\" you were promised. You go to the only logical location next, the skate park to see if anyone can help you learn some sick tricks. ");
-        yield break;
-       
-    }
+		yield break;
+	}
 
-    
 
 }

@@ -6,6 +6,7 @@ public class simpleMove : MonoBehaviour
 {
     CharacterController controller;
     public GameObject skateboard;
+    public GameObject playerModel;
     private Animation kickflip;
     private Animation backflip;
     ParticleSystem magicParticles;
@@ -24,7 +25,7 @@ public class simpleMove : MonoBehaviour
     {
          controller = GetComponent<CharacterController>();
         kickflip = skateboard.GetComponent<Animation>();
-        backflip = GetComponent<Animation>();
+        backflip = playerModel.GetComponent<Animation>();
         magicParticles = GetComponent<ParticleSystem>();
         magicSFX = GetComponent<AudioSource>();
         skateSound = skateboard.GetComponent<AudioSource>();
