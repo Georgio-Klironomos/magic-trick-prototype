@@ -271,7 +271,7 @@ public partial class @SkateWizrd: Cradle.StoryFormats.Harlowe.HarloweStory
 		yield return text("The Wizard pulls out a skateboard with a bright teal lighting bolt and crystal wheels.");
 		yield return lineBreak();
 		yield return lineBreak();
-		yield return text("Wizard: With this bad boi you'll make friends in no time. Will you accept the responsability of the board?");
+		yield return text("Wizard: With this bad boi you'll make friends in no time. Will you accept the responsibility of the board?");
 		yield return lineBreak();
 		yield return lineBreak();
 		yield return link("Wow can I try it out?", "Wow can I try it out?", null);
@@ -325,7 +325,7 @@ public partial class @SkateWizrd: Cradle.StoryFormats.Harlowe.HarloweStory
 
 	IStoryThread passage12_Main()
 	{
-		yield return text("Wizard: Thats not important right now, whats important is that you use this board to make friends so you don't dissapoint your dear friend turtle when no one shows up to your party.");
+		yield return text("Wizard: That's not important right now, what's important is that you use this board to make friends so you're not the town loner anymore.");
 		yield return lineBreak();
 		yield return lineBreak();
 		yield return link("Wait how did you know that?!", "Wait how did you know that?!", null);

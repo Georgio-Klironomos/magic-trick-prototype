@@ -747,7 +747,7 @@
                         "type": "br"
                     },
                     {
-                        "text": "Wizard: With this bad boi you'll make friends in no time. Will you accept the responsability of the board?",
+                        "text": "Wizard: With this bad boi you'll make friends in no time. Will you accept the responsibility of the board?",
                         "type": "text"
                     },
                     {
@@ -882,7 +882,7 @@
                 "Tags": "",
                 "Tokens": [
                     {
-                        "text": "Wizard: Thats not important right now, whats important is that you use this board to make friends so you don't dissapoint your dear friend turtle when no one shows up to your party.",
+                        "text": "Wizard: That's not important right now, what's important is that you use this board to make friends so you're not the town loner anymore.",
                         "type": "text"
                     },
                     {
